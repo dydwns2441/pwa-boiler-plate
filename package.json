@@ -1,0 +1,23 @@
+{
+  "name": "push_server",
+  "version": "1.0.0",
+  "description": "Web Push Server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/",
+    "vapid": "node_modules/web-push/src/cli.js generate-vapid-keys --json > server/vapid.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "push-server"
+  ],
+  "author": "Your Name <email@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-storage": "^0.0.7",
+    "web-push": "^3.5.0"
+  }
+}
